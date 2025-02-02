@@ -19,7 +19,58 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <link href="./styles.css" rel="stylesheet">
+    <style>
+        /* Basic Styling for demonstration */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
 
+        .container-fluid {
+            padding-left: 20px; /* Adjust as needed */
+            padding-right: 20px; /* Adjust as needed */
+        }
+        .bg-page-header {
+            background-image: url('path/to/your/image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            min-height: 500px; /* Adjust as needed */
+            display: flex;
+            flex-direction: column; /* To center content vertically */
+            justify-content: center; /* To center content vertically */
+            align-items: center; /* To center content horizontally */
+            color: white; /* Text color for better contrast */
+            text-align: center; /* Center text */
+            padding: 20px; /* Add padding for better readability */
+        }
+        .bg-page-header h1 {
+          font-size: 4em; /* Adjust as needed */
+        }
+        .contact-info-box {
+            border: 1px solid #ddd; /* Add borders */
+            border-radius: 8px; /* Rounded corners */
+            transition: transform 0.3s; /* Smooth hover effect */
+        }
+        .contact-info-box:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333; /* Darker background */
+            color: white;
+            padding: 20px 0;
+            margin-top: 30px; /* Add some space above the footer */
+        }
+        .navbar-brand h1 {
+          font-size: 2em; /* Make the logo bigger */
+        }
+        .navbar-nav .nav-link {
+            margin-right: 20px; /* Add space between nav items */
+        }
+        .btn-primary {
+          padding: 10px 20px; /* Make button bigger */
+        }
+
+    </style>
 
 </head>
 
@@ -48,24 +99,12 @@
                             <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
+                           </div>
                     </div>
                 </div>
                 <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
                     <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 display-4 text-primary text-uppercase"></h1>
+                        <h1 class="m-0 display-4 text-primary text-uppercase">Estate</h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -93,46 +132,34 @@
         </div>
     </div>
 
-    <!-- Page Header with Image -->
     <div class="container-fluid bg-page-header">
-        <!-- No text content here, just the image -->
+        <h1>Estate Law Services</h1>
+        <p>Your Trusted Partner in Estate Planning</p>
     </div>
 
-   <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-    <div class="row mt-5">
-        <div class="col-lg-4">
-            <div class="d-flex justify-content-lg-center p-4 contact-info-box">
-                <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
-                <div class="ml-3">
-                    <h5 class="text-white">Address</h5>
-                    <p class="m-0">123 Street, City, State</p>
+    <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <div class="d-flex justify-content-lg-center p-4 contact-info-box">
+                    <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
+                    <div class="ml-3">
+                        <h5 class="text-white">Address</h5>
+                        <p class="m-0">123 Street, City, State</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="d-flex justify-content-lg-center p-4 contact-info-box">
-                <i class="fa fa-2x fa-envelope-open text-primary"></i>
-                <div class="ml-3">
-                    <h5 class="text-white">Email Us</h5>
-                    <p class="m-0">info@example.com</p>
+            <div class="col-lg-4">
+                <div class="d-flex justify-content-lg-center p-4 contact-info-box">
+                    <i class="fa fa-2x fa-envelope-open text-primary"></i>
+                    <div class="ml-3">
+                        <h5 class="text-white">Email Us</h5>
+                        <p class="m-0">info@example.com</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="d-flex justify-content-lg-center p-4 contact-info-box">
-                <i class="fa fa-2x fa-phone-alt text-primary"></i>
-                <div class="ml-3">
-                    <h5 class="text-white">Call Us</h5>
-                    <p class="m-0">+012 345 6789</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer>
-    <div class="container text-center">
-        <p>&copy; 2025 T Fresh Law. All Rights Reserved.</p>
-    </div>
-</footer>
+            <div class="col-lg-4">
+                <div class="d-flex justify-content-lg-center p-4 contact-info-box">
+                    <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                    <div class="ml-3">
+                        <h5 class="text-white">Call Us</h5>
+                        <p class="m
