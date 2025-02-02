@@ -9912,55 +9912,36 @@ h4, h5, h6 {
 }
 
 <style>
+    /* Ensure the body and HTML cover the full height of the viewport */
+    html, body {
+        height: 100%; /* Ensures both the HTML and body elements stretch to the full height */
+        margin: 0; /* Removes default margins */
+    }
+
+    /* Page header with background image */
     .bg-page-header {
         background-image: url('unknown.jpg'); 
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        position: absolute; /* Ensures it stays fixed behind the content */
+        position: absolute; /* Keeps it fixed behind content */
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        z-index: -1; /* Places it behind all other content */
+        height: 100%; /* Full height */
+        z-index: -1; /* Behind all content */
     }
 
-    /* Ensure the rest of the content doesn't overlap the background */
+    /* Make sure the content fills the screen */
     .container-fluid {
-        position: relative;
-        z-index: 1; /* Ensures content stays above the image */
+        position: relative; /* Ensures content appears above the background */
+        z-index: 1; /* Keeps content above the background */
     }
 
-    /* Optional: Add a minimum height to make sure the background covers the entire viewport height */
+    /* Additional padding/margin tweaks */
     .container-fluid.bg-secondary {
-        min-height: 100vh;
-    }
-</style>
-
-
-<style>
-    .bg-page-header {
-        background-image: url('unknown.jpg'); 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: absolute; /* Ensures it stays fixed behind the content */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1; /* Places it behind all other content */
-    }
-
-    /* Ensure the rest of the content doesn't overlap the background */
-    .container-fluid {
-        position: relative;
-        z-index: 1; /* Ensures content stays above the image */
-    }
-
-    /* Optional: Add a minimum height to make sure the background covers the entire viewport height */
-    .container-fluid.bg-secondary {
-        min-height: 100vh;
+        min-height: 100vh; /* Ensures this section is at least as tall as the viewport */
+        padding-top: 90px; /* Ensure spacing from the header */
     }
 </style>
 
