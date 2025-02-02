@@ -9913,25 +9913,3 @@ h4, h5, h6 {
 
 <style>
 
-.bg-page-header {
-    background-image: url('unknown.jpg');
-    background-size: cover; /* Scales the image to cover the container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat;
-    height: 120vp; /* Ensures the image covers the full viewport height */
-    width: 120vp; /* Ensures the image takes the full width of the page */
-}
-
-    /* Make sure the content fills the screen */
-    .container-fluid {
-        position: relative; /* Ensures content appears above the background */
-        z-index: 1; /* Keeps content above the background */
-    }
-
-    /* Additional padding/margin tweaks */
-    .container-fluid.bg-secondary {
-        min-height: 100vh; /* Ensures this section is at least as tall as the viewport */
-        padding-top: 90px; /* Ensure spacing from the header */
-    }
-</style>
-
