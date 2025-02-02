@@ -9918,8 +9918,8 @@ h4, h5, h6 {
     background-size: cover; /* Scales the image to cover the container */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;
-    height: auto; /* Ensures the image covers the full viewport height */
-    width: auto; /* Ensures the image takes the full width of the page */
+    height: 120vp; /* Ensures the image covers the full viewport height */
+    width: 120vp; /* Ensures the image takes the full width of the page */
 }
 
     /* Make sure the content fills the screen */
