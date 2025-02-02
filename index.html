@@ -20,6 +20,16 @@
 
     <link href="./styles.css" rel="stylesheet">
 
+    <style>
+        .bg-page-header {
+            background-image: url('img/unknown.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Make image take full viewport height */
+            width: 100%; /* Make image take full width of the page */
+        }
+    </style>
 
 </head>
 
@@ -94,35 +104,8 @@
     </div>
 
     <!-- Page Header with Image -->
-    <div class="container-fluid bg-page-header" style="margin-bottom: 90px;">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-3 text-white text-uppercase">Page Title</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Current Page</p>
-                    
-<style>
-    .bg-page-header {
-        background-image: url('unknown.jpg'); /* Image is in the root directory */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-    }
-</style>
-
-        }
-    </style>
-                </div>
-            </div>
-        </div>
+    <div class="container-fluid bg-page-header">
+        <!-- No text content here, just the image -->
     </div>
 
     <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
@@ -159,3 +142,4 @@
 
 </body>
 </html>
+
