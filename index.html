@@ -26,88 +26,50 @@
         }
 
         .container-fluid {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 20px; /* Adjust as needed */
+            padding-right: 20px; /* Adjust as needed */
         }
-
         .bg-page-header {
             background-image: url('path/to/your/image.jpg'); /* Replace with your image path */
             background-size: cover;
             background-position: center;
-            min-height: 500px;
+            min-height: 500px; /* Adjust as needed */
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 20px;
+            flex-direction: column; /* To center content vertically */
+            justify-content: center; /* To center content vertically */
+            align-items: center; /* To center content horizontally */
+            color: white; /* Text color for better contrast */
+            text-align: center; /* Center text */
+            padding: 20px; /* Add padding for better readability */
         }
-
         .bg-page-header h1 {
-            font-size: 4em;
+          font-size: 4em; /* Adjust as needed */
         }
-
         .contact-info-box {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            transition: transform 0.3s;
+            border: 1px solid #ddd; /* Add borders */
+            border-radius: 8px; /* Rounded corners */
+            transition: transform 0.3s; /* Smooth hover effect */
         }
-
         .contact-info-box:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Slightly enlarge on hover */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
         footer {
-            background-color: #333;
+            background-color: #333; /* Darker background */
             color: white;
             padding: 20px 0;
-            margin-top: 30px;
+            margin-top: 30px; /* Add some space above the footer */
         }
-
         .navbar-brand h1 {
-            font-size: 2em;
+          font-size: 2em; /* Make the logo bigger */
         }
-
         .navbar-nav .nav-link {
-            margin-right: 20px;
+            margin-right: 20px; /* Add space between nav items */
         }
-
         .btn-primary {
-            padding: 10px 20px;
+          padding: 10px 20px; /* Make button bigger */
         }
 
-        .social-icons a {
-            display: inline-block;
-            margin: 0 5px;
-            transition: transform 0.3s;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.2);
-        }
-
-        .social-icons i {
-            font-size: 20px;
-            color: #fff;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .footer-links a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
     </style>
 
 </head>
@@ -133,25 +95,39 @@
                         </div>
                     </div>
                     <div class="col-lg-5 text-right">
-                        <div class="d-inline-flex align-items-center p-2 social-icons">
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-pinterest"></i></a>
-                            <a href=""><i class="fab fa-tiktok"></i></a>
-                            <a href=""><i class="fab fa-medium"></i></a>
-                            <a href=""><i class="fab fa-snapchat"></i></a>
-                            <a href=""><i class="fab fa-discord"></i></a>
-                            <a href=""><i class="fab fa-vimeo"></i></a>
-                            <a href=""><i class="fab fa-behance"></i></a>
-                            <a href=""><i class="fab fa-dribbble"></i></a>
-                        </div>
+                        <div class="d-inline-flex align-items-center p-2">
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                           </div>
                     </div>
                 </div>
                 <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
-                    </nav>
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary text-uppercase">Estate</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Practice</a>
+                            <a href="team.html" class="nav-item nav-link">Attorneys</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="#" class="dropdown-item">Menu Item 1</a>
+                                    <a href="#" class="dropdown-item">Menu Item 2</a>
+                                    <a href="#" class="dropdown-item">Menu Item 3</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Get A Quote</a>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
@@ -162,35 +138,28 @@
     </div>
 
     <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-
-    </div>
-
-    <footer class="mt-5">
-        <div class="container text-center">
-            <div class="social-icons">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-youtube"></i></a>
-                <a href=""><i class="fab fa-pinterest"></i></a>
-                <a href=""><i class="fab fa-tiktok"></i></a>
-                <a href=""><i class="fab fa-medium"></i></a>
-                <a href=""><i class="fab fa-snapchat"></i></a>
-                <a href=""><i class="fab fa-discord"></i></a>
-                <a href=""><i class="fab fa-vimeo"></i></a>
-                <a href=""><i class="fab fa-behance"></i></a>
-                <a href=""><i class="fab fa-dribbble"></i></a>
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <div class="d-flex justify-content-lg-center p-4 contact-info-box">
+                    <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
+                    <div class="ml-3">
+                        <h5 class="text-white">Address</h5>
+                        <p class="m-0">123 Street, City, State</p>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Site Map</a>
+            <div class="col-lg-4">
+                <div class="d-flex justify-content-lg-center p-4 contact-info-box">
+                    <i class="fa fa-2x fa-envelope-open text-primary"></i>
+                    <div class="ml-3">
+                        <h5 class="text-white">Email Us</h5>
+                        <p class="m-0">info@example.com</p>
+                    </div>
+                </div>
             </div>
-            <p>&copy; 2025 T Fresh Law. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-</body>
-
-</html>
+            <div class="col-lg-4">
+                <div class="d-flex justify-content-lg-center p-4 contact-info-box">
+                    <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                    <div class="ml-3">
+                        <h5 class="text-white">Call Us</h5>
+                        <p class="m
