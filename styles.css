@@ -9938,3 +9938,29 @@ h4, h5, h6 {
 </style>
 
 
+<style>
+    .bg-page-header {
+        background-image: url('unknown.jpg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute; /* Ensures it stays fixed behind the content */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Places it behind all other content */
+    }
+
+    /* Ensure the rest of the content doesn't overlap the background */
+    .container-fluid {
+        position: relative;
+        z-index: 1; /* Ensures content stays above the image */
+    }
+
+    /* Optional: Add a minimum height to make sure the background covers the entire viewport height */
+    .container-fluid.bg-secondary {
+        min-height: 100vh;
+    }
+</style>
+
