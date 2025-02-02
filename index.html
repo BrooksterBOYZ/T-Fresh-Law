@@ -18,21 +18,73 @@
 
     <link href="./styles.css" rel="stylesheet">
     <style>
-        /* ... (rest of your CSS) ... */
-
-        /* Logo Area Adjustment - More Aggressive Text Fitting */
-        .col-lg-3.bg-secondary {
-            width: 200px; /* Further reduce width if needed */
-            padding: 10px; /* Reduce padding */
+        /* Basic Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
         }
 
-        .col-lg-3.bg-secondary h1 {
-            font-size: 1.5rem; /* Reduce font size even more */
-            word-wrap: break-word;
-            hyphens: auto;
-            text-align: center; /* Center the text within the box */
+        .container-fluid {
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
+        /* Header Styles */
+        .bg-page-header {
+            background-image: url('path/to/your/image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .bg-page-header h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .bg-page-header p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Contact Info Styles */
+        .contact-info-box {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-info-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info-box i {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #007bff; /* Example: Blue color */
+        }
+
+        .contact-info-box h5 {
+            color: #fff;
+        }
+
+        .contact-info-box p {
+            margin: 0;
+        }
+
+        /* Footer Styles (Simplified) */
         footer {
             background-color: #333;
             color: white;
@@ -41,132 +93,130 @@
             text-align: center;
         }
 
-        footer .contact-info-box { /* Style for the contact boxes in the footer */
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            transition: transform 0.3s;
-            margin-bottom: 20px; /* Space between boxes */
-            padding: 20px;
-            text-align: center;
-            background-color: rgba(51, 51, 51, 0.7); /* Slightly transparent background */
-        }
-
-        footer .contact-info-box:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer .contact-info-box i {
-            font-size: 2em;
-            margin-bottom: 10px;
-            color: #007bff;
-        }
-
-        footer .contact-info-box h5 {
-            color: #fff;
-        }
-
-        footer .contact-info-box p {
-            margin: 0;
-        }
-
-        footer .social-icons a {
+        .social-icons a {
             display: inline-block;
             margin: 0 10px;
             transition: transform 0.3s;
         }
 
-        footer .social-icons a:hover {
+        .social-icons a:hover {
             transform: scale(1.2);
         }
 
-        footer .social-icons i {
+        .social-icons i {
             font-size: 24px;
             color: #fff;
         }
-
     </style>
 
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 bg-secondary d-none d-lg-block">
-                <a href="index.html" class="navbar-brand w-100 h-auto m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 fs-1 text-primary text-uppercase">Tailored Estate Planning</h1>
+<a href="index.html" class="navbar-brand w-100 m-0 p-2 d-flex flex-column align-items-center justify-content-center text-center">
+    <h4 class="m-0 text-primary text-uppercase">Tailored</h4>
+    <h5 class="m-0 text-white">Estate Planning</h5>
+</a>
+
                 </a>
             </div>
             <div class="col-lg-9">
                 <div class="row bg-white border-bottom d-none d-lg-flex">
-                   </div>
+                    <div class="col-lg-7 text-left">
+                        <div class="h-100 d-inline-flex align-items-center py-2 px-3">
+                            <i class="fa fa-envelope text-primary mr-2"></i>
+                            <small>info@example.com</small>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 px-2">
+                            <i class="fa fa-phone-alt text-primary mr-2"></i>
+                            <small>+012 345 6789</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-right">
+                        <div class="d-inline-flex align-items-center p-2 social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
                 <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
-                   </nav>
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary text-uppercase">Estate</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Practice</a>
+                            <a href="team.html" class="nav-item nav-link">Attorneys</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="#" class="dropdown-item">Menu Item 1</a>
+                                    <a href="#" class="dropdown-item">Menu Item 2</a>
+                                    <a href="#" class="dropdown-item">Menu Item 3</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Sign up for a Webinar</a>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
 
     <div class="container-fluid bg-page-header">
-        <h1></h1>
+        <h1 </h1>
         <p></p>
     </div>
 
-    <footer class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-        <div class="row mt-5">
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-start p-4 contact-info-box">
-                    <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
-                    <div class="ml-3">
-                        <h5 class="text-white">Address</h5>
-                        <p class="m-0">123 Street, City, State</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-start p-4 contact-info-box">
-                    <i class="fa fa-2x fa-envelope-open text-primary"></i>
-                    <div class="ml-3">
-                        <h5 class="text-white">Email</h5>
-                        <p class="m-0">contact@example.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-start p-4 contact-info-box">
-                    <i class="fa fa-2x fa-phone-alt text-primary"></i>
-                    <div class="ml-3">
-                        <h5 class="text-white">Phone</h5>
-                        <p class="m-0">+1 234 567 8900</p>
-                    </div>
+<footer class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+    <div class="row mt-5">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-start p-4 contact-info-box">
+                <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
+                <div class="ml-3">
+                    <h5 class="text-white">Address</h5>
+                    <p class="m-0">123 Street, City, State</p>
                 </div>
             </div>
         </div>
-
-        <hr class="bg-light my-4">
-
-        <div class="row text-center text-lg-left">
-            <div class="col-md-6">
-                <p class="mb-0">© 2025 T Fresh Law. All Rights Reserved.</p>
-            </div>
-            <div class="col-md-6 text-center text-md-right">
-                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-start p-4 contact-info-box">
+                <i class="fa fa-2x fa-envelope-open text-primary"></i>
+                <div class="ml-3">
+                    <h5 class="text-white">Email</h5>
+                    <p class="m-0">contact@example.com</p>
+                </div>
             </div>
         </div>
-
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <p class="mb-0"><i class="fa fa-envelope mr-2"></i> info@example.com</p>
-            </div>
-            <div class="col-md-6 text-md-right">
-                <p class="mb-0"><i class="fa fa-phone mr-2"></i> +1 234 567 8900</p>
+        <div class="col-lg-4">
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-start p-4 contact-info-box">
+                <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                <div class="ml-3">
+                    <h5 class="text-white">Phone</h5>
+                    <p class="m-0">+1 234 567 8900</p>
+                </div>
             </div>
         </div>
+    </div>
 
-    </footer>
+    <hr class="bg-light my-4">
 
-</body>
+    <div class="row text-center text-lg-left">
+        <div class="col-md-6">
+            <p class="mb-0">© 2025 T Fresh Law. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
 
-</html>
