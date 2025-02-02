@@ -9911,12 +9911,21 @@ h4, h5, h6 {
   list-style-type: none;
 }
 
-
 .bg-page-header {
-background-image: url('img/unknown.jpeg');
- background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-   height: 400px;
+    background-image: url('img/unknown.jpg');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Make it full screen on larger devices */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
+@media (max-width: 768px) {
+    .bg-page-header {
+        height: 50vh; /* Adjust height for smaller screens */
+    }
+}
